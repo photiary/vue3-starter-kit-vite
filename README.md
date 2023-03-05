@@ -41,7 +41,7 @@ yarn add -D @types/node
 ```
 
 ## 🍟 코딩 컨벤션 도구
-- 참고링크: https://eslint.vuejs.org/user-guide/npm
+- 참조링크: https://eslint.vuejs.org/user-guide/npm
 - 참조링크: https://prettier.io/docs/en/install.html
 
 ```shell
@@ -57,6 +57,7 @@ yarn add -D eslint-plugin-prettier
 module.exports = {
   env: {
     browser: true,
+    node: true,
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -72,6 +73,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'vue/multi-word-component-names': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -92,3 +94,24 @@ module.exports = {
   }
 }
 ```
+
+## 🌭 추가 패키지
+개발에 편의를 돕는 js 패키지들을 추가한다
+
+```shell
+# Vue 상태 관리
+yarn add pinia
+# 입력 데이터 검증
+yarn add vee-validate
+yarn add vue-router
+yarn add axios
+yarn add axios-mock-adapter
+
+# URL querystring 확장 패키지 
+yarn add qs
+# 날짜 패키지
+yarn add dayjs
+yarn add lodash
+```
+
+## 🍿 디렉토리 구조

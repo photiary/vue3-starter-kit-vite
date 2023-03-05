@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
   },
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -16,6 +17,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'vue/multi-word-component-names': 'off',
     'prettier/prettier': [
       'error',
       {
