@@ -8,6 +8,38 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
+## 🥡 체크 리스트
+- [ ] 사용 서버, 라이브러리등 프로젝트 설계에 맞는 버전 구성
+- [ ] 형상관리
+- [ ] CI/CD 환경 구성 선택
+- [ ] 개발(로컬, 서버), 운영 환경 분리
+  - [ ] 환경변수
+  - [ ] Mock 테스트 환경
+  - [ ] CORS
+  - [ ] Log
+  - [ ] devtool
+- [ ] 디렉토리 구조
+- [ ] 코딩 컨벤션
+- [ ] 공통 처리
+  - [ ] HTTP Headers
+  - [ ] API 호출
+  - [ ] API 에러 핸들러
+  - [ ] 입력 데이터 검증
+  - [ ] 날짜 처리
+  - [ ] 초기 상태, 요청 중, 완료, 실패
+  - [ ] 화면 Layout
+  - [ ] Dialog(대화상자) modal
+  - [ ] 데이터 표시 서식(Vue.js `Filters`)
+- [ ] 전역 메시지(코드) 관리
+  - [ ] Front-end
+  - [ ] Back-end
+- [ ] 전역 상수(코드) 관리
+  - [ ] Front-end
+  - [ ] Back-end
+- [ ] 웹 스토리지(`sessionStorage` 또는 `localStorage`)
+
+---
+
 ## 🍕 프로젝트 개발 환경
 
 - Node.js v18.14.0
