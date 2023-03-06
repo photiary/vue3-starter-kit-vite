@@ -1,4 +1,4 @@
-import { API_ERROR_0002 } from '@/api/errorConstants'
+import { API_ERROR_0002 } from '@/plugins/api/errorConstants.js'
 
 /**
  * Basic Auth 에러 핸들러

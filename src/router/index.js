@@ -9,4 +9,9 @@ const router = createRouter({
   routes // short for `routes: routes`
 })
 
+// 참조링크: https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards
+// router.beforeEach(next => {
+//   return next()
+// })
+
 export default router

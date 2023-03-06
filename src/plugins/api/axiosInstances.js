@@ -1,6 +1,6 @@
 import Axios from 'axios'
-import authConstants from '@/api/authConstants'
-import errorHandlers from '@/api/errorHandlers'
+import authConstants from '@/plugins/api/authConstants.js'
+import errorHandlers from '@/plugins/api/errorHandlers.js'
 
 /**
  * 디폴트 Headers를 갖는 Axios instance를 생성한다.

@@ -25,11 +25,12 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   - [ ] API 호출
   - [ ] API 에러 핸들러
   - [ ] 입력 데이터 검증
-  - [ ] 날짜 처리
+  - [X] 날짜 처리
   - [ ] 초기 상태, 요청 중, 완료, 실패
   - [ ] 화면 Layout
   - [ ] Dialog(대화상자) modal
-  - [ ] 데이터 표시 서식(Vue.js `Filters`)
+  - [X] 데이터 표시 서식
+  - [ ] 권한 처리
 - [ ] 전역 메시지(코드) 관리
   - [ ] Front-end
   - [ ] Back-end
@@ -37,6 +38,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
   - [ ] Front-end
   - [ ] Back-end
 - [ ] 웹 스토리지(`sessionStorage` 또는 `localStorage`)
+  - [ ] 개인정보 및 접속 토큰 저장
 
 ---
 
@@ -147,3 +149,29 @@ yarn add lodash
 ```
 
 ## 🍿 디렉토리 구조
+
+
+# 개발 가이드 라인
+
+## Vue-router
+- 참조문서: https://router.vuejs.org/
+
+## Pinia
+- 참조문서: https://pinia.vuejs.org/
+
+## Vee-validate
+- 참조문서: https://vee-validate.logaretm.com/v4/
+
+## 데이터 표시 서식
+- `formatters.js` 를 `import`하여 사용
+- 사양에 맞게 함수를 추가
+
+```vue
+<script setup>
+import { formatSimpleDate } from '@/plugins/formatters'
+</script>
+
+<template>
+  <p>날짜: {{ formatSimpleDate(new Date()) }}</p>
+</template>
+```
